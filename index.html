@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+      <input type="text" style="visibility:hidden;">
     <div class="bg-img">
       <div class="container">
         <div class="row">
@@ -87,6 +88,12 @@
           console.log(e.propertyName);
         });
       });
+
+      document.addEventListener("DOMContentLoaded", ()=>{
+          document.querySelector("input[type=\"text\"]").focus();
+          
+      })
+
     </script>
   </body>
 </html>
