@@ -67,3 +67,14 @@ body {
   border-color: #94a16d;
   box-shadow: 0 0 1rem #535a3f;
 }
+.hiddenInput{
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+.hiddenInput:focus{
+    outline: transparent;
+}
