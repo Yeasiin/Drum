@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.6;
+  color: ivory;
+}
+
+.container {
+  width: 116rem;
+  margin: 0 auto;
+}
+.row {
+  height: 100vh;
+}
+.bg-img {
+  background-image: url("bg-drum.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.drum-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  justify-self: center;
+  gap: 2rem;
+}
+.key {
+  text-transform: uppercase;
+  width: 10%;
+  text-align: center;
+  border-radius: 0.5rem;
+  border: 0.4rem solid #e0f5a2;
+  box-shadow: 0px 2px 9px 3px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0.8rem 1.5rem;
+  transition: all 0.07s ease;
+  background: rgba(0, 0, 0, 0.5);
+  backface-visibility: hidden;
+}
+.key kbd {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.key > span {
+  display: block;
+  color: #eeebdd;
+  margin-top: -1rem;
+  font-size: 70%;
+}
+.playing {
+  transform: scale(1.1);
+  border-color: #94a16d;
+  box-shadow: 0 0 1rem #535a3f;
+}
